@@ -6,7 +6,7 @@
 /*   By: thibaultgiraudon <thibaultgiraudon@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/17 13:11:57 by thibaultgir       #+#    #+#             */
-/*   Updated: 2023/09/20 14:30:24 by thibaultgir      ###   ########.fr       */
+/*   Updated: 2023/09/20 15:17:12 by thibaultgir      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,9 +51,13 @@ void	Span::addNumber( int number ) {
 
 void    Span::addNumber(std::vector<int>::iterator begin, std::vector<int>::iterator end)
 {
-    if (this->_vec.size() + std::distance(begin, end) > this->_N)
-        throw (StackFullException());
-    this->_vec.insert(this->_vec.end(), begin, end);
+	while (begin != end)
+	{
+		this->_vec.push_back(*begin);
+		if (this->_vec.size() > this->_N)
+			throw (StackFullException());
+		++begin;
+	}
 }
 
 int	Span::longestSpan( void ) {
