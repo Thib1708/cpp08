@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thibaultgiraudon <thibaultgiraudon@stud    +#+  +:+       +#+        */
+/*   By: tgiraudo <tgiraudo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/16 10:31:08 by thibaultgir       #+#    #+#             */
-/*   Updated: 2023/09/16 11:30:07 by thibaultgir      ###   ########.fr       */
+/*   Updated: 2023/09/20 09:59:32 by tgiraudo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,11 +62,11 @@ int main()
 	}
 	{
 		std::cout << BLUE << "\n------- BIG STACK-------\n\n" << RESET << std::endl;
-		Span stack(42424242);
+		Span stack(10042);
 		std::vector<int> s1;
 		try
 		{
-			for(int i(0); i < 42424242; i++)
+			for(int i(0); i < 10042; i++)
 				s1.push_back(i);
 			stack.addNumber(s1.begin(), s1.end());
 			std::cout << "Max span: " << stack.longestSpan() << std::endl;
