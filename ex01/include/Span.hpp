@@ -6,7 +6,7 @@
 /*   By: thibaultgiraudon <thibaultgiraudon@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/17 13:11:57 by thibaultgir       #+#    #+#             */
-/*   Updated: 2023/09/16 11:28:21 by thibaultgir      ###   ########.fr       */
+/*   Updated: 2023/09/20 14:27:35 by thibaultgir      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,6 @@
 class Span {
     private:
         size_t  _N;
-        size_t  _index;
         std::vector<int> _vec;
     public:
         Span( void );
