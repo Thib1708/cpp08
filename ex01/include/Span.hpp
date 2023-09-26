@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Span.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thibaultgiraudon <thibaultgiraudon@stud    +#+  +:+       +#+        */
+/*   By: tgiraudo <tgiraudo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/17 13:11:57 by thibaultgir       #+#    #+#             */
-/*   Updated: 2023/09/16 11:28:21 by thibaultgir      ###   ########.fr       */
+/*   Updated: 2023/09/26 12:57:34 by tgiraudo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,7 @@ class Span {
         void    addNumber(std::vector<int>::iterator begin, std::vector<int>::iterator end);
         int     shortestSpan( void );
         int     longestSpan( void );
+        void    print( void );
         class StackFullException: public std::exception {
 				public :
 						virtual const char	*what( void ) const throw();

@@ -6,7 +6,7 @@
 /*   By: tgiraudo <tgiraudo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/16 10:31:08 by thibaultgir       #+#    #+#             */
-/*   Updated: 2023/09/20 09:59:32 by tgiraudo         ###   ########.fr       */
+/*   Updated: 2023/09/26 13:01:56 by tgiraudo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,6 +54,7 @@ int main()
 			stack.addNumber(11);
 			std::cout << "Max span: " << stack.longestSpan() << std::endl;
 			std::cout << "Min span: " << stack.shortestSpan() << std::endl;
+			stack.print();
 		}
 		catch(const std::exception& e)
 		{
