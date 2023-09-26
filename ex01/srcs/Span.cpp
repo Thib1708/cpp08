@@ -6,7 +6,7 @@
 /*   By: tgiraudo <tgiraudo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/17 13:11:57 by thibaultgir       #+#    #+#             */
-/*   Updated: 2023/09/26 13:11:48 by tgiraudo         ###   ########.fr       */
+/*   Updated: 2023/09/26 13:14:04 by tgiraudo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,6 +61,7 @@ void    Span::addNumber(std::vector<int>::iterator begin, std::vector<int>::iter
 }
 
 int	Span::longestSpan( void ) {
+	std::vector<int> tmp_vec = this->_vec;
 	if (this->_vec.size() < 2)
 		throw(StackEmptyException());
 	else
@@ -77,8 +78,8 @@ int	Span::shortestSpan( void ) {
 		throw(StackEmptyException());
 	else
 	{
-		std::sort(this->_vec.begin(), this->_vec.end());
-		min = this->_vec[1] - this->_vec[0];
+		std::sort(tmp_vec.begin(), tmp_vec.end());
+		min = tmp_vec[1] - tmp_vec[0];
 		for (size_t i(1); i < this->_vec.size() - 1; i++)
 		{
 			if (tmp_vec[i + 1] - tmp_vec[i] < min)
