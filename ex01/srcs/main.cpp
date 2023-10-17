@@ -6,7 +6,7 @@
 /*   By: tgiraudo <tgiraudo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/16 10:31:08 by thibaultgir       #+#    #+#             */
-/*   Updated: 2023/09/26 13:14:37 by tgiraudo         ###   ########.fr       */
+/*   Updated: 2023/09/26 13:38:04 by tgiraudo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int main()
 	{
 		try
 		{
-			std::cout << BLUE << "\n------- STACK FULL -------\n\n" << RESET << std::endl;
+			std::cout << BLUE << "\n\n------- STACK FULL -------\n\n" << RESET << std::endl;
 			Span stack(100);
 			for(int i = 0; i < 100; i++)
 				stack.addNumber(i);
@@ -29,7 +29,7 @@ int main()
 		}
 	}
 	{
-		std::cout << BLUE << "\n------- 1 ELEMENT -------\n\n" << RESET << std::endl;
+		std::cout << BLUE << "\n\n------- 1 ELEMENT -------\n" << RESET << std::endl;
 		Span stack(4);
 		try
 		{
@@ -43,7 +43,7 @@ int main()
 		}
 	}
 	{
-		std::cout << BLUE << "\n------- MAX & MIN SPAN -------\n\n" << RESET << std::endl;
+		std::cout << BLUE << "\n\n------- MAX & MIN SPAN -------\n" << RESET << std::endl;
 		Span stack(5);
 		try
 		{
@@ -61,7 +61,7 @@ int main()
 		}
 	}
 	{
-		std::cout << BLUE << "\n------- BIG STACK-------\n\n" << RESET << std::endl;
+		std::cout << BLUE << "\n\n------- BIG STACK-------\n" << RESET << std::endl;
 		Span stack(10042);
 		std::vector<int> s1;
 		try

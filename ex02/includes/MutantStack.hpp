@@ -6,7 +6,7 @@
 /*   By: tgiraudo <tgiraudo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/17 13:11:57 by thibaultgir       #+#    #+#             */
-/*   Updated: 2023/09/20 10:52:03 by tgiraudo         ###   ########.fr       */
+/*   Updated: 2023/09/26 14:22:16 by tgiraudo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@
 template <typename T>
 class MutantStack: public std::stack<T> {
     private:
-        T   _element;
+
     public:
         MutantStack( void );
         ~MutantStack( void );
